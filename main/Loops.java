@@ -25,7 +25,16 @@ public class Loops {
             System.arraycopy(pagina, 0, livro[i], 0, linhas);
         }
 
-        l.lerMatriz(livro);
+        Vetores.dinamycMatrice();
+
+        String[][] matrice = new String[3][3];
+        matrice[0][0] = "aqui nao contem nada";
+        matrice[0][1] = "aqui também não";
+        matrice[1][0] = "aqui contém a substring 'interessante'";
+        matrice[1][1] = "aqui também contém a substring 'interessante'";
+        matrice[2][0] = "aqui tem é nada";
+        matrice[2][2] = "nada por aqui";
+        Vetores.findTextInMatrice(matrice, "interessante");
 
     }
 
